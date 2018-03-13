@@ -1,86 +1,333 @@
 <!DOCTYPE html>
-<html>
 <html lang="en-GB">
   <head>
     <meta charset="utf-8">
-<meta name="description" content=" ShoeEaze - The revolutionary shoe designed  .">
-    <link href='bootstrap-3.3.7-dist/css/bootstrap.min.css' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Home - ShoeEaze - The Comfort Revolution">
+    <link href='bootstrap-3.3.7/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="instagram.ico" href="instagram.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
     <title>
    ShoeEaze | The Comfort Revolution  </title>
+   <style>
+   
+   /* Add an orange color to all icons and set the font-size */
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+
+/* Add slide function */
+
+.slideanim {visibility:hidden;}
+
+  .slide {
+
+      animation-name: slide;
+
+      -webkit-animation-name: slide;
+
+      animation-duration: 1s;
+
+      -webkit-animation-duration: 1s;
+
+      visibility: visible;
+
+  }
+
+  @keyframes slide {
+
+    0% {
+
+      opacity: 0;
+
+      transform: translateY(70%);
+
+    }
+
+    100% {
+
+      opacity: 1;
+
+      transform: translateY(0%);
+
+    }
+
+  }
+
+  @-webkit-keyframes slide {
+
+    0% {
+
+      opacity: 0;
+
+      -webkit-transform: translateY(70%);
+
+    }
+
+    100% {
+
+      opacity: 1;
+
+      -webkit-transform: translateY(0%);
+
+    }
+
+  }
+   </style>
   </head>
 
   <body>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <div class='jumbotron'>
-   <img src="images/header.jpg" alt="My test image">
-   <div class='container'>
-     <h1>hhh</h1>
-   </div>
- </div>
-      <div class='nav'>
-        <nav>
-          <ul>
-      <li> <a href="#">HOME</a>
-       <li><a href="about.html" LINK="red">ABOUT</a></li>
-        <li><a href="campaigns.html">CAMPAIGNS</a></li>
-       <li><a href="shop.html">SHOP</a></li>
-       <li><a href="sizingchart.html">SIZING CHART</a></li>
-       <li><a href="reviews.html">REVIEWS</a></li>
-      <li> <a href="contact.html">CONTACT US</a></li>
-   </ul>
-     </nav>
-         <form>
-           <input type="search" name="q" placeholder="Search ShoeEase" size="20">
-           <input type="submit" value="Go!">
-           <span class="validity"></span>
-         </form>
-       </div>
-     </div>
-     <div style="padding:0 16px;">
-
-
-
-     </nav>
-     <h1>Hello World</h1>
-    <p>
-    <em><strong> I am very hungry</strong></em>
-</p>
-
-    <img src="images/smiley.png" alt="My test image">
-
-<a href="mailto:hello@shoeease.org">Sign up to claim your 10% discount</a>
-<!-- And here is our main footer that is used across all the pages of our website -->
-<hr>
-<footer>
-<div>  visit us
-</div>
-<hr>
-</footer>
-
-<div class="row">
-  <div class="column">
-    ADDRESS <br><br>
-    71 South Crescent,<br>
-    Rainbowville,  <br>
-    KW16 1TQ</div>
-  <div class="column">CONTACT US <br><br>
-    079 5399 1725
-    <br>
-<a href="mailto:hello@shoeease.org">Claim your 10% discount</a>
+    <div class="container-fluid" style="color:#fff;height:60px;">
+    <img src="images/COMPLETEshoeLOGO.png" alt="full logo" style="height:50px">
+    <img src="images/tm-01.png" alt="trademark slogan" style="height:60px">
   </div>
-  <div class="column">FOLLOW US <br><br>
-    Social media</div>
+
+  <nav class="navbar navbar-inverse" style="background-color:#ff4500">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">ShoeEaze</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Campaigns</a></li>
+          <li><a href="#">Sizing Chart</a></li>
+          <li><a href="#">Contact</a></li>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search..." name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img alt="First slide" img src="images/header.jpg" style="width:100%; center">
+        <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+        <img src="images/tm-01.png" alt="trademark slogan" style="height:200px">
+      </div>
+      </div>
+      <div class="item">
+        <img alt="Second slide" src="http://37.media.tumblr.com/tumblr_m8tazfiVYJ1qa42jro1_1280.jpg">
+        <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+      <div class="item">
+        <img alt="Third slide" src="http://38.media.tumblr.com/tumblr_m8tb2rVsD31qa42jro1_1280.jpg">
+        <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+    </div>
+      <!-- Left and right controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
 </div>
-<div class="footer-copyright">
-        <div class="container">
-        ©Copyright 2018 ShoeEase, Inc. | All Rights Reserved.
-        </a>
+<br>
+     <div style="padding:0 16px;">
+       <div class='jumbotron'>
+         <div class='container'>
+           <h1>Hello</h1>
+           yaaaaas
+         </div>
+       </div>
+
+    <img src="images/shoegalleryback.jpg" alt="My test image">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
         </div>
       </div>
-      </footer>
-      <script src="scripts/main.js"></script>
+    </div>
+
+    <!-- Container (About Section) -->
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-8">
+
+        <h2>About Company Page</h2>
+
+        <h4>Welcome to the <b>comfort revolution!</b> <h4>
+
+        <p>The global movement taking storm on a mission provide comfort worldwide  <p>
+
+  <small>Say goodbye to sore feet on a night out with ShoeEaze</small>
+
+        <button class="btn btn-default btn-lg active">About</button>
+
+      </div>
+
+      <div class="col-sm-4">
+
+        <span class="glyphicon glyphicon-globe logo">span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  IMAGES CONTAINER
+
+
+
+
+
+  <!-- Container (Services Section) -->
+
+  <div class="container-fluid text-center">
+
+    <h2>SERVICES</h2>
+
+    <h4>What we offer</h4>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col-sm-4">
+
+        <span class="glyphicon glyphicon-cloud logo-small .slideanim"></span>
+
+        <h4>COMFORT</h4>
+
+        <p>Lightweight technology with your comfort in mind</p>
+
+      </div>
+
+      <div class="col-sm-4">
+
+        <span class="glyphicon glyphicon-leaf logo-small .slideanim"></span>
+
+        <h4>SUITAINABILITY</h4>
+
+        <p>Recylcable material and responsible sourcing</p>
+
+      </div>
+
+      <div class="col-sm-4">
+
+        <span class="glyphicon glyphicon-gbp logo-small .slideanim"></span>
+
+        <h4>VALUE</h4>
+
+        <p>Long lasting affordable shoes</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <br><br>
+
+
+
+
+    </div>
+
+
+<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+<script src="bootstrap-3.3.7/js/unit/transition.js"></script>
+<script src="bootstrap-3.3.7/js/unit/carousel.js"></script>
+      <script src="scripts/main.js"></script><br><br>
   </body>
-</html>
+<!-- Main footer that is used across all the pages-->
+  <footer class="container-fluid text-center">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="images/logo.png.png" alt="white background logo" style="height:100px" class="img-rounded">
+        </div>
+      <div class="col-sm-3">
+      <b>ADDRESS </b><br><br>
+        71 Comfort Lane,<br>
+        Rainbowville,  <br>
+        KW16 1TQ</div>
+      <div class="col-sm-3"><b>CONTACT US </b><br><br>
+        Phone.079 5399 1725 <br>Fax. 020 8534 9947
+        <br>
+    <a href="mailto:hello@shoeeaze.org.uk">hello@shoeeaze.org.uk </a>
+      </div>
+      <div class="col-sm-3"><b>FOLLOW US </b><br>
+        <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+  </div><br>
+    <form class="form-inline"><b>Claim your discount:</b>
+      <input type="email" class="form-control" size="50" placeholder="Email Address...">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form><br>
+    <div class="footer-copyright">
+            <div class="container">
+           ©Copyright 2018 ShoeEaze, Inc. | All Rights Reserved.
+            </a>
+            </div>
+          </div>
+  </footer>
+  </html>

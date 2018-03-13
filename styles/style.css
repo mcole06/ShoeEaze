@@ -1,49 +1,71 @@
-header {
-    background-color: #f1f1f1;
-    padding: 100px;
-    text-align: center;
-    box-sizing: border-border-box;
-    margin: 0;
+.navbar {
+  margin-bottom: 0px;
+  background-color: #ff4500;
+  border-radius: 0;
+  font-size: 13px !important;
+  letter-spacing: 4px;
 }
 
-nav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: none;
-      position: fixed;
-      top: 0;
-      width: 100%;
+/* Add a white color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+ color: #fff !important;
+ font-weight: bold;
 }
 
-li {float: left;}
-
-li, a:hover {
-    background-color: #111;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+/* On hover, the links will turn grey */
+.navbar-nav li a:hover {
+ background-color: #fff !important;
+ color: #808080 !important;
 }
-
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
-
-ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 500px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
 }
 
+/* Add a orange background color and some padding to the footer */
+footer {
+ width: 100%;
+ color:white;
+ background-color:#ff4500;
+ padding: 25px;
+ font-size: 13px !important;
+ letter-spacing: 4px;
+ display: block;
+}
 
-html {
-  background-color: #00539F;
+caption {
+ display: table-caption;
+ text-align: center;
+}
+
+.fa {
+ padding: 20px;
+ font-size: 30px;
+ width: 65px;
+ text-align: center;
+ text-decoration: none;
+ margin: 5px 2px;
+ border-radius: 50%;
+}
+
+.fa:hover {
+ opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
 }
 
 h1 {
@@ -62,24 +84,6 @@ h1 {
 7px 6px 1px #ccc;
 }
 
-body {
-  width: 800px;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
-.red {
-  color: red;
-  font-size: 150px;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
 .column {
       float: left;
     width: 30%;
@@ -94,8 +98,33 @@ img {
     clear: both;
 }
 
-.footer-copyright {
-   display: block;
-   text-align: center;
-   padding: 14px 16px;
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+.jumbotron {
+    font-family: Lato, sans-serif;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
