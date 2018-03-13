@@ -13,7 +13,7 @@
     <title>
    ShoeEaze | The Comfort Revolution  </title>
    <style>
-   
+
    /* Add an orange color to all icons and set the font-size */
 .logo-small {
     color: #f4511e;
@@ -82,6 +82,10 @@
     }
 
   }
+  .carousel {
+   overflow: hidden;
+
+}
    </style>
   </head>
 
@@ -103,12 +107,12 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Campaigns</a></li>
-          <li><a href="#">Sizing Chart</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="campaigns.html">Campaigns</a></li>
+          <li><a href="sizingchart.html">Sizing Chart</a></li>
+          <li><a href="contact.html">Contact</a></li>
         <form class="navbar-form navbar-left" action="/action_page.php">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search..." name="search">
@@ -133,27 +137,34 @@
     </ol>
     <div class="carousel-inner">
       <div class="item active">
-        <img alt="First slide" img src="images/header.jpg" style="width:100%; center">
+        <img alt="First slide" img src="images/slide1.png" style="width:100%">
         <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>LA is always so much fun!</p>
-        <img src="images/tm-01.png" alt="trademark slogan" style="height:200px">
+        <h3>ShoeEaze</h3>
+        <p>Stay elegant with comfort!</p>
+        <img src="images/tm-01.png" alt="trademark slogan" style="width:100%">
       </div>
       </div>
       <div class="item">
-        <img alt="Second slide" src="http://37.media.tumblr.com/tumblr_m8tazfiVYJ1qa42jro1_1280.jpg">
+        <img alt="Second slide" src="images/slide2.png" style="width:100%">
         <div class="carousel-caption">
         <h3>Los Angeles</h3>
         <p>LA is always so much fun!</p>
       </div>
     </div>
       <div class="item">
-        <img alt="Third slide" src="http://38.media.tumblr.com/tumblr_m8tb2rVsD31qa42jro1_1280.jpg">
+        <img alt="Third slide" src="images/slide3.png" style="width:100%">
         <div class="carousel-caption">
         <h3>Los Angeles</h3>
         <p>LA is always so much fun!</p>
       </div>
     </div>
+    <div class="item">
+      <img alt="Fourth slide" src="images/dog.png" style="width:100%">
+      <div class="carousel-caption">
+      <h3>Los Angeles</h3>
+      <p>LA is always so much fun!</p>
+    </div>
+  </div>
     </div>
       <!-- Left and right controls -->
     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -168,38 +179,9 @@
 
 </div>
 <br>
-     <div style="padding:0 16px;">
-       <div class='jumbotron'>
-         <div class='container'>
-           <h1>Hello</h1>
-           yaaaaas
-         </div>
-       </div>
-
-    <img src="images/shoegalleryback.jpg" alt="My test image">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor..</p>
-          <p>Ut enim ad..</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor..</p>
-          <p>Ut enim ad..</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor..</p>
-          <p>Ut enim ad..</p>
-        </div>
-      </div>
-    </div>
-
     <!-- Container (About Section) -->
 
-  <div class="container-fluid">
+  <div class="container-fluid" bg-grey>
 
     <div class="row">
 
@@ -219,21 +201,13 @@
 
       <div class="col-sm-4">
 
-        <span class="glyphicon glyphicon-globe logo">span>
+        <span class="glyphicon glyphicon-globe logo"></span>
 
       </div>
 
     </div>
 
   </div>
-
-
-
-  IMAGES CONTAINER
-
-
-
-
 
   <!-- Container (Services Section) -->
 
@@ -287,7 +261,79 @@
 
 
     </div>
+    <script>
 
+    $(document).ready(function(){
+
+      // Add smooth scrolling to all links in navbar + footer link
+
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+
+          event.preventDefault();
+
+
+
+          // Store hash
+
+          var hash = this.hash;
+
+
+
+          // Using jQuery's animate() method to add smooth page scroll
+
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+
+          $('html, body').animate({
+
+            scrollTop: $(hash).offset().top
+
+          }, 900, function(){
+
+
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+
+            window.location.hash = hash;
+
+          });
+
+        } // End if
+
+      });
+
+
+
+      $(window).scroll(function() {
+
+        $(".slideanim").each(function(){
+
+          var pos = $(this).offset().top;
+
+
+
+          var winTop = $(window).scrollTop();
+
+            if (pos < winTop + 600) {
+
+              $(this).addClass("slide");
+
+            }
+
+        });
+
+      });
+
+    })
+
+    </script>
+
+     
 
 <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>

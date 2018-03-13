@@ -99,32 +99,33 @@ h1 {
 }
 
 body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 15px sans-serif;
     line-height: 1.8;
     color: #818181;
 }
 
 .jumbotron {
-    font-family: Lato, sans-serif;
+    font-family: sniglet, sans-serif;
 }
 
 
 
 h2 {
-    font-size: 24px;
+    font-size: 60px;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sniglet', cursive;
 }
 
 
 
 h4 {
-    font-size: 19px;
+    font-size: 25px;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: sans-serif;
 }
